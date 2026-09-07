@@ -16,15 +16,15 @@
 - APFDc
 
 
-## comparison modes
+## comparison modes (10)
 
 - pytest only (baseline)
-- pytest-ranking strategies
-    - QRF: ordering by tests with shorter runtime (weight as **1-0** in regsmart)
-    - RecentFail:ordering by recently-failed tests (weight as **0-1** in regsmart)
-    - SimChgPath: ordering by tests whose IDs are more textually similar to the paths of Python files changed
-- pytest-regsmart strategies
-    - selecting per file
-    - selecting per function
-    - (both above varying RTP weigts)
+- pytest-ranking strategies (3)
+    - QRF: orders tests by shorter runtime (weighted 1–0 in regsmart)
+    - RecentFail: orders tests by recent failures (weighted 0–1 in regsmart)
+    - SimChgPath: orders tests by how textually similar their IDs are to the paths of changed Python files
+- pytest-regsmart strategies (6)
+    - selection granularity: per file / per function
+    - RTP weight: none / partial / full
+    - (2 granularities × 3 weight settings = 6)
 
