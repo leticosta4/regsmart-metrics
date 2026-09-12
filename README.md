@@ -14,17 +14,26 @@
 - Number/percentage of hidden faults/changes
 - Number/percentage of detected faults/changes
 - APFDc
+- Workflow run time (Github Actions)
 
 
 ## comparison modes (10)
 
 - pytest only (baseline)
-- pytest-ranking strategies (3)
+- pytest-ranking strategies (4)
     - QRF: orders tests by shorter runtime (weighted 1–0 in regsmart)
     - RecentFail: orders tests by recent failures (weighted 0–1 in regsmart)
     - SimChgPath: orders tests by how textually similar their IDs are to the paths of changed Python files
-- pytest-regsmart strategies (6)
-    - selection granularity: per file / per function
-    - RTP weight: none / partial / full
-    - (2 granularities × 3 weight settings = 6)
+    - Hybrid: unify/balance all 3 above
+- pytest-regsmart strategies (4)
+    - selection granularity: per function
+    - RTP weight:
+      - none (--no-rank)
+      - QTF
+      - RecentFail
+      - Hybrid
 
+
+## final evaluation table
+
+something like pytest-ranking paper: https://dl.acm.org/doi/pdf/10.1145/3696630.3728587
