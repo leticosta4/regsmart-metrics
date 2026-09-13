@@ -1,0 +1,543 @@
+{
+  "aeon": {
+    "all_workflow_files": [
+      "fast_release.yml",
+      "issue_assigned.yml",
+      "issue_comment_edited.yml",
+      "issue_comment_posted.yml",
+      "monthly_github_maintenance.yml",
+      "periodic_tests.yml",
+      "pr_core_dep_import.yml",
+      "pr_examples.yml",
+      "pr_label_edited.yml",
+      "pr_opened.yml",
+      "pr_precommit.yml",
+      "pr_pytest.yml",
+      "pr_typecheck.yml",
+      "release.yml",
+      "update_contributors.yml",
+      "weekly_github_maintenance.yml"
+    ],
+    "test_candidates": [
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [
+          " \"3.11\", \"3.12\", \"3.13\", \"3.14\" "
+        ],
+        "os_found": [
+          " ubuntu-24.04, macOS-14, windows-2022 "
+        ],
+        "file": "periodic_tests.yml",
+        "branch": "main"
+      },
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [
+          " \"3.11\", \"3.12\", \"3.13\", \"3.14\" "
+        ],
+        "os_found": [
+          " ubuntu-24.04, macOS-14, windows-2022 "
+        ],
+        "file": "pr_pytest.yml",
+        "branch": "main"
+      }
+    ]
+  },
+  "ansible-lint": {
+    "all_workflow_files": [
+      "ack.yml",
+      "finalize.yml",
+      "push.yml",
+      "redirects.yml",
+      "release.yml",
+      "tox.yml"
+    ],
+    "test_candidates": [
+      {
+        "has_pytest_literal": false,
+        "has_matrix": false,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "tox.yml",
+        "branch": "main"
+      }
+    ]
+  },
+  "apscheduler": {
+    "all_workflow_files": [
+      "publish.yml",
+      "test.yml"
+    ],
+    "test_candidates": [
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [
+          "\"3.10\", \"3.11\", \"3.12\", \"3.13\", \"3.14\""
+        ],
+        "os_found": [
+          "macos-latest, windows-latest"
+        ],
+        "file": "test.yml",
+        "branch": "master"
+      }
+    ]
+  },
+  "dask": {
+    "all_workflow_files": [
+      "additional.yml",
+      "conda.yml",
+      "label-all.yml",
+      "pre-commit.yml",
+      "publish-test-results.yaml",
+      "release-drafter.yml",
+      "release-publish.yml",
+      "stale-bot.yaml",
+      "test-report.yaml",
+      "tests.yml",
+      "upstream.yml"
+    ],
+    "test_candidates": [
+      {
+        "has_pytest_literal": false,
+        "has_matrix": false,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "additional.yml",
+        "branch": "main"
+      },
+      {
+        "has_pytest_literal": false,
+        "has_matrix": false,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "conda.yml",
+        "branch": "main"
+      },
+      {
+        "has_pytest_literal": false,
+        "has_matrix": false,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "label-all.yml",
+        "branch": "main"
+      },
+      {
+        "has_pytest_literal": false,
+        "has_matrix": false,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "pre-commit.yml",
+        "branch": "main"
+      },
+      {
+        "has_pytest_literal": false,
+        "has_matrix": false,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "test-report.yaml",
+        "branch": "main"
+      },
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [],
+        "os_found": [
+          "ubuntu-latest, ubuntu-24.04-arm, windows-latest"
+        ],
+        "file": "tests.yml",
+        "branch": "main"
+      },
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "upstream.yml",
+        "branch": "main"
+      }
+    ]
+  },
+  "dvc": {
+    "all_workflow_files": [
+      "benchmarks.yaml",
+      "build.yaml",
+      "codeql.yml",
+      "plugin_tests.yaml",
+      "tests.yaml"
+    ],
+    "test_candidates": [
+      {
+        "has_pytest_literal": false,
+        "has_matrix": false,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "build.yaml",
+        "branch": "main"
+      },
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [],
+        "os_found": [
+          "ubuntu-latest"
+        ],
+        "file": "plugin_tests.yaml",
+        "branch": "main"
+      },
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [],
+        "os_found": [
+          "ubuntu-latest, macos-latest, windows-latest"
+        ],
+        "file": "tests.yaml",
+        "branch": "main"
+      }
+    ]
+  },
+  "ipython": {
+    "all_workflow_files": [
+      "docs.yml",
+      "downstream.yml",
+      "mypy.yml",
+      "nightly-wheel-build.yml",
+      "publish.yml",
+      "python-package.yml",
+      "ruff.yml",
+      "test.yml",
+      "zizmor.yml",
+      "zulip.yaml"
+    ],
+    "test_candidates": [
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [
+          "\"3.13\""
+        ],
+        "os_found": [
+          "ubuntu-latest"
+        ],
+        "file": "downstream.yml",
+        "branch": "main"
+      },
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [
+          "\"3.11\", \"3.12\", \"3.13\", \"3.14\""
+        ],
+        "os_found": [
+          "ubuntu-latest, windows-latest"
+        ],
+        "file": "test.yml",
+        "branch": "main"
+      }
+    ]
+  },
+  "librosa": {
+    "all_workflow_files": [
+      "ci.yml",
+      "docs-ci-linkcheck.yml",
+      "docs-ci.yml",
+      "docs.yml",
+      "lint_python.yml",
+      "publish-doc-asset.yml",
+      "publish.yml"
+    ],
+    "test_candidates": [
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "ci.yml",
+        "branch": "main"
+      }
+    ]
+  },
+  "molecule": {
+    "all_workflow_files": [
+      "ack.yml",
+      "finalize.yml",
+      "push.yml",
+      "redirects.yml",
+      "release.yml",
+      "tox.yml"
+    ],
+    "test_candidates": [
+      {
+        "has_pytest_literal": false,
+        "has_matrix": false,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "tox.yml",
+        "branch": "main"
+      }
+    ]
+  },
+  "networkx": {
+    "all_workflow_files": [
+      "benchmark.yml",
+      "circleci.yml",
+      "deploy-docs.yml",
+      "lint.yml",
+      "milestone-merged-prs.yaml",
+      "mypy.yml",
+      "nightly-release-test.yml",
+      "nightly.yml",
+      "pytest-randomly.yml",
+      "release.yml",
+      "test.yml",
+      "weekly-dispatch.yml"
+    ],
+    "test_candidates": [
+      {
+        "has_pytest_literal": false,
+        "has_matrix": false,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "circleci.yml",
+        "branch": "main"
+      },
+      {
+        "has_pytest_literal": false,
+        "has_matrix": false,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "nightly.yml",
+        "branch": "main"
+      },
+      {
+        "has_pytest_literal": false,
+        "has_matrix": false,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "pytest-randomly.yml",
+        "branch": "main"
+      },
+      {
+        "has_pytest_literal": false,
+        "has_matrix": true,
+        "python_versions_found": [],
+        "os_found": [
+          "ubuntu, macos, windows"
+        ],
+        "file": "test.yml",
+        "branch": "main"
+      },
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [
+          "\"3.12\", \"3.13\""
+        ],
+        "os_found": [
+          "ubuntu-latest, macos-latest, windows-latest"
+        ],
+        "file": "weekly-dispatch.yml",
+        "branch": "main"
+      }
+    ]
+  },
+  "pytest-django": {
+    "all_workflow_files": [
+      "deploy.yml",
+      "main.yml"
+    ],
+    "test_candidates": [
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "main.yml",
+        "branch": "main"
+      }
+    ]
+  },
+  "pytest-xdist": {
+    "all_workflow_files": [
+      "deploy.yml",
+      "test.yml"
+    ],
+    "test_candidates": [
+      {
+        "has_pytest_literal": false,
+        "has_matrix": true,
+        "python_versions_found": [],
+        "os_found": [
+          "ubuntu-latest, windows-latest"
+        ],
+        "file": "test.yml",
+        "branch": "master"
+      }
+    ]
+  },
+  "pytorch-lightning": {
+    "all_workflow_files": [
+      "README.md",
+      "_build-packages.yml",
+      "_legacy-checkpoints.yml",
+      "call-clear-cache.yml",
+      "ci-checkpoints.yml",
+      "ci-pkg-install.yml",
+      "ci-schema.yml",
+      "ci-tests-fabric.yml",
+      "ci-tests-pytorch.yml",
+      "cleanup-caches.yml",
+      "code-checks.yml",
+      "docs-build.yml",
+      "docs-tutorials.yml",
+      "labeler-issue.yml",
+      "probot-auto-cc.yml",
+      "probot-check-group.yml",
+      "release-nightly.yml",
+      "release-pkg.yml",
+      "tpu-tests.yml.disabled"
+    ],
+    "test_candidates": [
+      {
+        "has_pytest_literal": false,
+        "has_matrix": false,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "_legacy-checkpoints.yml",
+        "branch": "master"
+      },
+      {
+        "has_pytest_literal": false,
+        "has_matrix": false,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "call-clear-cache.yml",
+        "branch": "master"
+      },
+      {
+        "has_pytest_literal": false,
+        "has_matrix": false,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "ci-checkpoints.yml",
+        "branch": "master"
+      },
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [
+          "\"3.10\", \"3.11\""
+        ],
+        "os_found": [
+          "\"ubuntu-22.04\", \"macOS-14\", \"windows-2022\""
+        ],
+        "file": "ci-pkg-install.yml",
+        "branch": "master"
+      },
+      {
+        "has_pytest_literal": false,
+        "has_matrix": false,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "ci-schema.yml",
+        "branch": "master"
+      },
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [],
+        "os_found": [
+          "macOS-14, ubuntu-22.04, windows-2022"
+        ],
+        "file": "ci-tests-fabric.yml",
+        "branch": "master"
+      },
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [],
+        "os_found": [
+          "macOS-14, ubuntu-22.04, windows-2022"
+        ],
+        "file": "ci-tests-pytorch.yml",
+        "branch": "master"
+      },
+      {
+        "has_pytest_literal": false,
+        "has_matrix": false,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "code-checks.yml",
+        "branch": "master"
+      },
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "tpu-tests.yml.disabled",
+        "branch": "master"
+      }
+    ]
+  },
+  "trimesh": {
+    "all_workflow_files": [
+      "pr_policy.yml",
+      "release.yml",
+      "test.yml"
+    ],
+    "test_candidates": [
+      {
+        "has_pytest_literal": false,
+        "has_matrix": false,
+        "python_versions_found": [],
+        "os_found": [],
+        "file": "pr_policy.yml",
+        "branch": "main"
+      },
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [
+          "\"3.10\", \"3.13\""
+        ],
+        "os_found": [
+          "ubuntu-latest, windows-latest, macos-latest, macos-15-intel"
+        ],
+        "file": "test.yml",
+        "branch": "main"
+      }
+    ]
+  },
+  "ultralytics": {
+    "all_workflow_files": [
+      "ci.yml",
+      "cla.yml",
+      "conda-check-prs.yml",
+      "docker.yml",
+      "docs.yml",
+      "format.yml",
+      "fuzz.yml",
+      "links.yml",
+      "merge-main-into-prs.yml",
+      "mirror.yml",
+      "publish.yml",
+      "stale.yml"
+    ],
+    "test_candidates": [
+      {
+        "has_pytest_literal": true,
+        "has_matrix": true,
+        "python_versions_found": [],
+        "os_found": [
+          "ubuntu-latest, macos-26, ubuntu-24.04-arm"
+        ],
+        "file": "ci.yml",
+        "branch": "main"
+      }
+    ]
+  }
+}

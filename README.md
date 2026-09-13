@@ -34,11 +34,6 @@
       - Hybrid
 
 
-## final evaluation table example
-
-something like pytest-ranking paper: https://dl.acm.org/doi/pdf/10.1145/3696630.3728587
-
-
 ## dataset: list of projects (14)
 
 the dataset is composed of 14 forks from the GitHub repositories below:
@@ -57,3 +52,9 @@ the dataset is composed of 14 forks from the GitHub repositories below:
 - Lightning-AI/pytorch-lightning - https://github.com/Lightning-AI/pytorch-lightning
 - mikedh/trimesh - https://github.com/mikedh/trimesh
 - ultralytics/ultralytics - https://github.com/ultralytics/ultralytics
+
+
+## Tables
+
+- Result table example: https://dl.acm.org/doi/pdf/10.1145/3696630.3728587 (pytest-ranking paper)
+- [wip] Regsmart experiments table: https://docs.google.com/spreadsheets/d/135Y76Gk5xiq7A5H25R3dVN4CU9mEy-ivjeOr0HiKq0I/edit?usp=sharing
